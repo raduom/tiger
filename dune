@@ -1,0 +1,15 @@
+(ocamllex
+ (modules TigerLexer))
+
+(menhir
+ (modules TigerParser))
+
+(executable
+ (name Line)
+ (modules Line)
+ (libraries base stdio))
+
+(library
+ (name Parser)
+ (modules Syntax TigerLexer TigerParser)
+ (libraries base stdio))

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+maintainer: "radu.ometita@gmail.com"
+authors: ["Radu Ometita <radu.ometita@gmail.com>"]
+homepage: "https://github.com/raduom/tiger"
+bug-reports: "https://github.com/raduom/tiger/issues"
+dev-repo: "https://github.com/raduom/tiger.git"
+
+build: [
+  ["dune" "build" "-p" name "-j" jobs]
+]
+
+depends: [
+  "dune" {build & >= "1.6"}
+]
